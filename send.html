@@ -1,0 +1,12 @@
+<?php 
+            
+$email = $_POST['email'];
+$message = $_POST['message'];
+
+$to = "somnanglover22112@gmail.com";
+$subject = "web-site Request";
+$body = "This is user web-site request do not reply. \n\n $message";
+mail ($to, $subject, $body);
+echo "Thank for support";
+
+?>
